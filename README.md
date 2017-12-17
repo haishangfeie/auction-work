@@ -1,7 +1,7 @@
 # 说明
 ## 文件夹
 auction是作品的源代码<br>
-server是作品部署后的文件，管理员权限运行`npm i`，然后运行`node build/auction_server.js`，打开浏览器输入：http://localhost:8000即可。
+server是作品部署后的文件，管理员权限运行`npm i`，然后运行`node build/auction_server.js`，打开浏览器输入：http://localhost:8000 即可。
 
 ## 作品说明
 
