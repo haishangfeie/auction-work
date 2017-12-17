@@ -1,0 +1,32 @@
+<form [formGroup]="formModel" (ngSubmit)="onSearch()" novalidate>
+  <div class="form-group" [class.has-error]="formModel.hasError('minlength','title')">
+    <label for="productTitle">商品名称:</label>
+    <input type="text" id="productTitle" placeholder="商品名称：第一个商品" class="form-control" formControlName="title">
+    <span class="help-block" [class.hidden]="!formModel.hasError('minlength','title')">
+      请至少输入3个字
+    </span>
+  </div>
+  <div class="form-group" [class.has-error]="formModel.hasError('positiveNumber','price')">
+    <label for="productPrice">商品价格：</label>
+    <input type="text" id="productPrice" placeholder="商品价格：筛选小于该价格的商品" class="form-control" formControlName="price">
+    <span class="help-block" [class.hidden]="!formModel.hasError('positiveNumber','price')">
+      请至少输入正数
+    </span>
+  </div>
+  <div class="form-group">
+    <label for="productCategory">商品类别：</label>
+    <select formControlName="category" id="productCategory" class="form-control">
+      <option value="-1">全部分类</option>
+      <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <button type="submit"
+            class="btn btn-primary btn-block"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="输入内容搜索商品">
+      搜索
+    </button>
+  </div>
+</form>
