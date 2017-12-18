@@ -97,7 +97,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/*css 初始化 */\r\nhtml, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\nfieldset, img, input, button {          /*fieldset组合表单中的相关元素*/\r\n  border: none;\r\n  padding: 0;\r\n  margin: 0;\r\n  outline-style: none;\r\n}\r\n\r\nul,\r\nol {\r\n  list-style: none;               /*清除列表风格*/\r\n}\r\n\r\ninput {\r\n  padding-top: 0;\r\n  padding-bottom: 0;\r\n  font-family: \"SimSun\", \"\\5B8B\\4F53\";\r\n  position: relative;\r\n}\r\n\r\nselect, input {\r\n  vertical-align: middle;\r\n}\r\n\r\nselect, input, textarea {\r\n  font-size: 12px;\r\n  margin: 0;\r\n}\r\n\r\ntextarea {\r\n  resize: none;\r\n}\r\n\r\n/*防止多行文本框拖动*/\r\nimg {\r\n  border: 0;\r\n  vertical-align: middle;\r\n}\r\n\r\n/*  去掉图片低测默认的3像素空白缝隙*/\r\ntable {\r\n  border-collapse: collapse;          /*合并外边线*/\r\n  border-spacing: 0;\r\n}\r\n\r\nbody {\r\n  font: 12px/150% Arial, Verdana, \"\\5B8B\\4F53\";   /*宋体，Unicode，统一码*/\r\n  color: #666;\r\n  background: #fff\r\n}\r\n\r\n/*初始化中原有的清除浮动*/\r\n.clearfix:before, .clearfix:after {\r\n  content: \"\";\r\n  display: table;\r\n}\r\n\r\n.clearfix:after {\r\n  clear: both;\r\n}\r\n\r\n.clearfix {\r\n  *zoom: 1; /*IE/7/6*/\r\n}\r\n\r\n\r\nh1, h2, h3, h4, h5, h6 {\r\n  text-decoration: none;\r\n  font-weight: normal;\r\n  font-size: 100%;\r\n}\r\n\r\ns, i, em {\r\n  font-style: normal;\r\n  text-decoration: none;\r\n}\r\n\r\nbody{\r\n  padding-top: 70px;\r\n}\r\n\r\n\r\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
