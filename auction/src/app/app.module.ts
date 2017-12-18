@@ -17,11 +17,9 @@ import { StarsComponent } from './stars/stars.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HomeComponent } from './home/home.component';
 import { ProductService } from './shared/product.service';
-import { FilterPipe } from './pipe/filter.pipe';
 import {HttpModule} from "@angular/http";
 import {WebSocketService} from "./shared/web-socket.service";
 import {HashLocationStrategy, LocationStrategy} from "@angular/common";
-import {environment} from "../environments/environment";
 
 
 
@@ -41,7 +39,6 @@ const routeConfig: Routes = [
     StarsComponent,
     ProductDetailComponent,
     HomeComponent,
-    FilterPipe
   ],
   imports: [
     BrowserModule,

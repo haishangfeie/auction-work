@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-3\">\n      <app-search></app-search>\n    </div>\n    <div class=\"col-md-9\">\n      <router-outlet></router-outlet>\n    </div>\n  </div>\n</div>\n<app-footer></app-footer>\n\n"
+module.exports = "<app-navbar></app-navbar>\r\n<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-3\">\r\n      <app-search></app-search>\r\n    </div>\r\n    <div class=\"col-md-9\">\r\n      <router-outlet></router-outlet>\r\n    </div>\r\n  </div>\r\n</div>\r\n<app-footer></app-footer>\r\n\r\n"
 
 /***/ }),
 
@@ -92,10 +92,9 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__product_detail_product_detail_component__ = __webpack_require__("../../../../../src/app/product-detail/product-detail.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__shared_product_service__ = __webpack_require__("../../../../../src/app/shared/product.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pipe_filter_pipe__ = __webpack_require__("../../../../../src/app/pipe/filter.pipe.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__shared_web_socket_service__ = __webpack_require__("../../../../../src/app/shared/web-socket.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__shared_web_socket_service__ = __webpack_require__("../../../../../src/app/shared/web-socket.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -103,7 +102,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 ///<reference path="../../node_modules/@angular/http/src/http_module.d.ts"/>
-
 
 
 
@@ -141,16 +139,15 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_10__stars_stars_component__["a" /* StarsComponent */],
                 __WEBPACK_IMPORTED_MODULE_11__product_detail_product_detail_component__["a" /* ProductDetailComponent */],
                 __WEBPACK_IMPORTED_MODULE_12__home_home_component__["a" /* HomeComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__pipe_filter_pipe__["a" /* FilterPipe */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(routeConfig),
                 __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_forms__["c" /* ReactiveFormsModule */],
-                __WEBPACK_IMPORTED_MODULE_15__angular_http__["b" /* HttpModule */]
+                __WEBPACK_IMPORTED_MODULE_14__angular_http__["b" /* HttpModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_13__shared_product_service__["b" /* ProductService */], __WEBPACK_IMPORTED_MODULE_16__shared_web_socket_service__["a" /* WebSocketService */], { provide: __WEBPACK_IMPORTED_MODULE_17__angular_common__["g" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_17__angular_common__["d" /* HashLocationStrategy */] }],
+            providers: [__WEBPACK_IMPORTED_MODULE_13__shared_product_service__["b" /* ProductService */], __WEBPACK_IMPORTED_MODULE_15__shared_web_socket_service__["a" /* WebSocketService */], { provide: __WEBPACK_IMPORTED_MODULE_16__angular_common__["g" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_16__angular_common__["d" /* HashLocationStrategy */] }],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -182,7 +179,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/carousel/carousel.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"carousel slide\" data-ride=\"carousel\" id=\"carousel-1\">\n  <ol class=\"carousel-indicators\">\n    <li data-target=\"#carousel-1\" class=\"active\" data-slide-to=\"0\"></li>\n    <li data-target=\"#carousel-1\" data-slide-to=\"1\"></li>\n    <li data-target=\"#carousel-1\" data-slide-to=\"2\"></li>\n  </ol>\n  <div class=\"carousel-inner\">\n    <div class=\"item\" *ngFor=\"let item of imgUrl | async ,let i =index\" [class.active]=\"i===0\">\n      <img src=\"\" alt=\"\" class=\"slide-image\" [src]=\"item\" [class.active]=\"\">\n    </div>\n    <a href=\"javascript:$('.carousel').carousel('prev')\" class=\"left carousel-control\">\n      <span class=\"glyphicon glyphicon-chevron-left\"></span>\n    </a>\n    <a href=\"javascript:$('.carousel').carousel('next')\" class=\"right carousel-control\">\n      <span class=\"glyphicon glyphicon-chevron-right\"></span>\n    </a>\n  </div>\n</div>\n"
+module.exports = "<div class=\"carousel slide\" data-ride=\"carousel\" id=\"carousel-1\">\r\n  <ol class=\"carousel-indicators\">\r\n    <li data-target=\"#carousel-1\" class=\"active\" data-slide-to=\"0\"></li>\r\n    <li data-target=\"#carousel-1\" data-slide-to=\"1\"></li>\r\n    <li data-target=\"#carousel-1\" data-slide-to=\"2\"></li>\r\n  </ol>\r\n  <div class=\"carousel-inner\">\r\n    <div class=\"item\" *ngFor=\"let item of imgUrl | async ,let i =index\" [class.active]=\"i===0\">\r\n      <img src=\"\" alt=\"\" class=\"slide-image\" [src]=\"item\" [class.active]=\"\">\r\n    </div>\r\n    <a href=\"javascript:$('.carousel').carousel('prev')\" class=\"left carousel-control\">\r\n      <span class=\"glyphicon glyphicon-chevron-left\"></span>\r\n    </a>\r\n    <a href=\"javascript:$('.carousel').carousel('next')\" class=\"right carousel-control\">\r\n      <span class=\"glyphicon glyphicon-chevron-right\"></span>\r\n    </a>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -247,7 +244,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <hr>\n  <footer>\n    <div class=\"row\">\n      <div class=\"col-lg-12\">\n        <p>面试作品-Angular</p>\n      </div>\n    </div>\n  </footer>\n</div>\n"
+module.exports = "<div class=\"container\">\r\n  <hr>\r\n  <footer>\r\n    <div class=\"row\">\r\n      <div class=\"col-lg-12\">\r\n        <p>面试作品-Angular</p>\r\n      </div>\r\n    </div>\r\n  </footer>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -308,7 +305,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row carousel-container\">\n  <app-carousel ></app-carousel>\n</div>\n<div class=\"row\">\n  <app-product></app-product>\n</div>"
+module.exports = "<div class=\"row carousel-container\">\r\n  <app-carousel ></app-carousel>\r\n</div>\r\n<div class=\"row\">\r\n  <app-product></app-product>\r\n</div>"
 
 /***/ }),
 
@@ -369,7 +366,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inverse navbar-fixed-top\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-ex1-collapse\">\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a href=\"#\" class=\"navbar-brand\">面试作品-珍品竞拍</a>\n    </div>\n    <div class=\"collapse navbar-collapse navbar-ex1-collapse\">\n      <ul class=\"nav navbar-nav\">\n        <li><a href=\"#\">关于我们</a></li>\n        <li><a href=\"#\">联系我们</a></li>\n        <li><a href=\"#\">网站地图</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-inverse navbar-fixed-top\">\r\n  <div class=\"container\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-ex1-collapse\">\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n      </button>\r\n      <a href=\"#\" class=\"navbar-brand\">面试作品-珍品竞拍</a>\r\n    </div>\r\n    <div class=\"collapse navbar-collapse navbar-ex1-collapse\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li><a href=\"#\">关于我们</a></li>\r\n        <li><a href=\"#\">联系我们</a></li>\r\n        <li><a href=\"#\">网站地图</a></li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -409,43 +406,6 @@ var NavbarComponent = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/pipe/filter.pipe.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FilterPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var FilterPipe = (function () {
-    function FilterPipe() {
-    }
-    FilterPipe.prototype.transform = function (list, filterField, keyword) {
-        if (!filterField || !keyword) {
-            return list;
-        }
-        return list.filter(function (item) {
-            var fieldValue = item[filterField];
-            return fieldValue.indexOf(keyword) >= 0;
-        });
-    };
-    FilterPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Pipe */])({
-            name: 'filter'
-        })
-    ], FilterPipe);
-    return FilterPipe;
-}());
-
-
-
-/***/ }),
-
 /***/ "../../../../../src/app/product-detail/product-detail.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -467,7 +427,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/product-detail/product-detail.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"thumbnail\">\n  <img src=\"http://placehold.it/820X230\" alt=\"\">\n  <div>\n    <h4 class=\"pull-right\">{{ product?.price }}元 </h4>\n    <h4>{{ product?.title }} </h4>\n    <p>{{ product?.desc }} </p>\n  </div>\n  <div>\n    <p class=\"pull-right\">共{{ comments?.length }}条评论</p>\n    <p>\n      <app-stars [rating]=\"product?.rating\" ></app-stars>\n    </p>\n  </div>\n</div>\n<div class=\"thumbnail\">\n  <button type=\"button\"\n          class=\"btn btn-default btn-lg\"\n          [class.active]=\"isWatched\"\n          (click)=\"watchProduct()\">\n    {{ isWatched?'取消关注':'关注' }}\n  </button>\n  <label for=\"\">最新出价：{{ currentBid | number:'.2-2'}}元</label>\n</div>\n<div class=\"well\">\n  <div>\n    <button class=\"btn btn-success\" (click)=\"isCommentHidden=!isCommentHidden\" >发表评论</button>\n  </div>\n  <div [hidden]=\"isCommentHidden\">\n    <div><app-stars [(rating)]=\"newRating\" [readOnly]=\"false\" ></app-stars></div>\n    <div>\n      <textarea [(ngModel)] =\"newComment\" rows=\"5\" class=\"textArea\"></textarea>\n    </div>\n    <button type=\"button\" class=\"btn\" (click)=\"addComment()\" >提交</button>\n  </div>\n  <div class=\"row\" *ngFor=\"let comment of comments\">\n    <hr>\n    <div class=\"col-md-12\">\n      <app-stars [rating]=\"comment.rating\"></app-stars>\n      <span>{{ comment.name }}</span>\n      <span class=\"pull-right\">{{ comment.timestamp | date:'yyyy-MM-dd HH:mm:ss' }}</span>\n      <p></p>\n      <p>{{ comment.content }}</p>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"thumbnail\">\r\n  <img src=\"http://placehold.it/820X230\" alt=\"\">\r\n  <div>\r\n    <h4 class=\"pull-right\">{{ product?.price }}元 </h4>\r\n    <h4>{{ product?.title }} </h4>\r\n    <p>{{ product?.desc }} </p>\r\n  </div>\r\n  <div>\r\n    <p class=\"pull-right\">共{{ comments?.length }}条评论</p>\r\n    <p>\r\n      <app-stars [rating]=\"product?.rating\" ></app-stars>\r\n    </p>\r\n  </div>\r\n</div>\r\n<div class=\"thumbnail\">\r\n  <button type=\"button\"\r\n          class=\"btn btn-default btn-lg\"\r\n          [class.active]=\"isWatched\"\r\n          (click)=\"watchProduct()\">\r\n    {{ isWatched?'取消关注':'关注' }}\r\n  </button>\r\n  <label for=\"\">最新出价：{{ currentBid | number:'.2-2'}}元</label>\r\n</div>\r\n<div class=\"well\">\r\n  <div>\r\n    <button class=\"btn btn-success\" (click)=\"isCommentHidden=!isCommentHidden\" >发表评论</button>\r\n  </div>\r\n  <div [hidden]=\"isCommentHidden\">\r\n    <div><app-stars [(rating)]=\"newRating\" [readOnly]=\"false\" ></app-stars></div>\r\n    <div>\r\n      <textarea [(ngModel)] =\"newComment\" rows=\"5\" class=\"textArea\"></textarea>\r\n    </div>\r\n    <button type=\"button\" class=\"btn\" (click)=\"addComment()\" >提交</button>\r\n  </div>\r\n  <div class=\"row\" *ngFor=\"let comment of comments\">\r\n    <hr>\r\n    <div class=\"col-md-12\">\r\n      <app-stars [rating]=\"comment.rating\"></app-stars>\r\n      <span>{{ comment.name }}</span>\r\n      <span class=\"pull-right\">{{ comment.timestamp | date:'yyyy-MM-dd HH:mm:ss' }}</span>\r\n      <p></p>\r\n      <p>{{ comment.content }}</p>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -576,7 +536,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/product/product.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div\n  class=\"col-xs-12 col-md-6 col-sm-6 col-lg-4 \"\n  *ngFor=\"let product of products | async\"\n  data-toggle=\"tooltip\"\n  data-placement=\"top\"\n  title=\"点击{{product.title}}链接了解商品详情\">\n  <div class=\"thumbnail clearfix\">\n    <img [src]=\"imgUrl\" alt=\"\">\n    <div class=\"caption\">\n      <h4 class=\"pull-right\">{{ product.price }}元</h4>\n      <h4><a [routerLink]=\"['/product',product.id]\">{{ product.title }}</a></h4>\n      <p>{{ product.desc }}</p>\n    </div>\n    <div class=\"pull-left\">\n      <app-stars [rating]=\"product.rating\"></app-stars>\n    </div>\n    <div class=\"product-department pull-right\">\n      <span *ngFor=\"let name of product.categories; let i=index\">\n        <a href=\"#\">{{ name }}</a>\n        <span>{{i < (product.categories.length-1) ? '>' : ''}}</span>\n      </span>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div\r\n  class=\"col-xs-12 col-md-6 col-sm-6 col-lg-4 \"\r\n  *ngFor=\"let product of products | async\"\r\n  data-toggle=\"tooltip\"\r\n  data-placement=\"top\"\r\n  title=\"点击{{product.title}}链接了解商品详情\">\r\n  <div class=\"thumbnail clearfix\">\r\n    <img [src]=\"imgUrl\" alt=\"\">\r\n    <div class=\"caption\">\r\n      <h4 class=\"pull-right\">{{ product.price }}元</h4>\r\n      <h4><a [routerLink]=\"['/product',product.id]\">{{ product.title }}</a></h4>\r\n      <p>{{ product.desc }}</p>\r\n    </div>\r\n    <div class=\"pull-left\">\r\n      <app-stars [rating]=\"product.rating\"></app-stars>\r\n    </div>\r\n    <div class=\"product-department pull-right\">\r\n      <span *ngFor=\"let name of product.categories; let i=index\">\r\n        <a href=\"#\">{{ name }}</a>\r\n        <span>{{i < (product.categories.length-1) ? '>' : ''}}</span>\r\n      </span>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -645,7 +605,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/search/search.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<form [formGroup]=\"formModel\" (ngSubmit)=\"onSearch()\" novalidate>\n  <div class=\"form-group\" [class.has-error]=\"formModel.hasError('minlength','title')\">\n    <label for=\"productTitle\">商品名称:</label>\n    <input type=\"text\" id=\"productTitle\" placeholder=\"商品名称：第一个商品\" class=\"form-control\" formControlName=\"title\">\n    <span class=\"help-block\" [class.hidden]=\"!formModel.hasError('minlength','title')\">\n      请至少输入3个字\n    </span>\n  </div>\n  <div class=\"form-group\" [class.has-error]=\"formModel.hasError('positiveNumber','price')\">\n    <label for=\"productPrice\">商品价格：</label>\n    <input type=\"text\" id=\"productPrice\" placeholder=\"商品价格：筛选小于该价格的商品\" class=\"form-control\" formControlName=\"price\">\n    <span class=\"help-block\" [class.hidden]=\"!formModel.hasError('positiveNumber','price')\">\n      请至少输入正数\n    </span>\n  </div>\n  <div class=\"form-group\">\n    <label for=\"productCategory\">商品类别：</label>\n    <select formControlName=\"category\" id=\"productCategory\" class=\"form-control\">\n      <option value=\"-1\">全部分类</option>\n      <option *ngFor=\"let category of categories\" [value]=\"category\">{{ category }}</option>\n    </select>\n  </div>\n  <div class=\"form-group\">\n    <button type=\"submit\"\n            class=\"btn btn-primary btn-block\"\n            data-toggle=\"tooltip\"\n            data-placement=\"bottom\"\n            title=\"输入内容搜索商品\">\n      搜索\n    </button>\n  </div>\n</form>\n"
+module.exports = "<form [formGroup]=\"formModel\" (ngSubmit)=\"onSearch()\" novalidate>\r\n  <div class=\"form-group\" [class.has-error]=\"formModel.hasError('minlength','title')\">\r\n    <label for=\"productTitle\">商品名称:</label>\r\n    <input type=\"text\" id=\"productTitle\" placeholder=\"商品名称：第一个商品\" class=\"form-control\" formControlName=\"title\">\r\n    <span class=\"help-block\" [class.hidden]=\"!formModel.hasError('minlength','title')\">\r\n      请至少输入3个字\r\n    </span>\r\n  </div>\r\n  <div class=\"form-group\" [class.has-error]=\"formModel.hasError('positiveNumber','price')\">\r\n    <label for=\"productPrice\">商品价格：</label>\r\n    <input type=\"text\" id=\"productPrice\" placeholder=\"商品价格：筛选小于该价格的商品\" class=\"form-control\" formControlName=\"price\">\r\n    <span class=\"help-block\" [class.hidden]=\"!formModel.hasError('positiveNumber','price')\">\r\n      请至少输入正数\r\n    </span>\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"productCategory\">商品类别：</label>\r\n    <select formControlName=\"category\" id=\"productCategory\" class=\"form-control\">\r\n      <option value=\"-1\">全部分类</option>\r\n      <option *ngFor=\"let category of categories\" [value]=\"category\">{{ category }}</option>\r\n    </select>\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <button type=\"submit\"\r\n            class=\"btn btn-primary btn-block\"\r\n            data-toggle=\"tooltip\"\r\n            data-placement=\"bottom\"\r\n            title=\"输入内容搜索商品\">\r\n      搜索\r\n    </button>\r\n  </div>\r\n</form>\r\n"
 
 /***/ }),
 
@@ -879,7 +839,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/stars/stars.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  <span *ngFor=\"let star of stars;let i =index\" class=\"glyphicon glyphicon-star\" [class.glyphicon-star-empty]=\"star\" (click)=\"clickStar(i)\" ></span>\n  <span>{{ rating |number:'1.0-1' }}星</span>\n</p>"
+module.exports = "<p>\r\n  <span *ngFor=\"let star of stars;let i =index\" class=\"glyphicon glyphicon-star\" [class.glyphicon-star-empty]=\"star\" (click)=\"clickStar(i)\" ></span>\r\n  <span>{{ rating |number:'1.0-1' }}星</span>\r\n</p>"
 
 /***/ }),
 
